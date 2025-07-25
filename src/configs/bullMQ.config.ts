@@ -11,8 +11,8 @@ export const bullMQConfig: SharedBullAsyncConfiguration = {
             port: config.get<number>('REDIS_PORT'),
             password: config.get<string>('REDIS_PASSWORD'),
             username: config.get<string>('REDIS_USERNAME'),
-            tls: {},
-            maxRetriesPerRequest: 1000000,
+            // tls: {},
+            maxRetriesPerRequest: null,
         }
         console.log(connectData)
         return {
